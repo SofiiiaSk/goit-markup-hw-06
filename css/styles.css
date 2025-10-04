@@ -788,9 +788,12 @@ input[type="checkbox"]:checked + .label-checkbox > .span-check {
   }
 }
 /*COMPUTER */
-@media screen and (min-width: 1160x) {
+@media screen and (min-width: 1158px) {
   .container {
     width: 1158px;
+  }
+  .second-list {
+    max-width: 1158px;
   }
   .points-text {
     flex-basis: calc((100% - 72px) / 4);
@@ -800,7 +803,6 @@ input[type="checkbox"]:checked + .label-checkbox > .span-check {
     width: 100%;
     height: 112px;
     justify-content: center;
-    margin-bottom: 8px;
     align-items: center;
     background-color: #f4f4fd;
   }
