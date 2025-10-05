@@ -435,12 +435,9 @@ a {
   padding: 100px 0;
   background-color: #2e2f42;
 }
-.all-content {
-  display: flex;
-  align-items: baseline;
-}
+
 .logop-container {
-  margin-right: 120px;
+  margin: auto;
 }
 
 .footer-logo .logo-part {
@@ -449,7 +446,6 @@ a {
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
-  margin-left: 156px;
 }
 .paragraf-footer {
   width: 264;
@@ -457,7 +453,6 @@ a {
   top: 3296px;
   left: 156px;
   opacity: 1;
-  margin-left: 156px;
   max-width: 264px;
   line-height: 1.5;
   color: #f4f4fd;
@@ -881,20 +876,46 @@ input[type="checkbox"]:checked + .label-checkbox > .span-check {
 }
 
 /* FOURTH SECTION */
-
-/*MOBILE */
-@media screen and (min-width: 320px) {
+/* MOBILE */
+@media screen and (max-width: 767px) {
   .fourth-list {
-    padding-left: 16px;
-    padding-right: 16px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+  }
+
+  .apps-list {
+    width: 100%;
+    max-width: 320px;
   }
 }
 
-/*PLANSHET */
+/* PLANSHET */
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .fourth-section {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .fourth-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 48px;
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .apps-list {
+    width: calc((100% - 24px) / 2);
+  }
+}
 
 /*COMPUTER */
 
@@ -902,15 +923,20 @@ input[type="checkbox"]:checked + .label-checkbox > .span-check {
 
 .page-footer {
   display: flex;
-  background-color: #2e2f42;
+  flex-direction: column;
   padding-top: 96px;
   padding-bottom: 96px;
   align-items: center;
+  justify-content: center;
+  background-color: #2e2f42;
+  padding: 96px 0;
 }
 
 .all-content {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
   gap: 72px;
 }
 
@@ -927,9 +953,11 @@ input[type="checkbox"]:checked + .label-checkbox > .span-check {
 
 .logo-part {
   color: #f4f4fd;
+  align-items: center;
 }
 
 .paragraf-footer {
+  text-align: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -996,22 +1024,6 @@ input[type="checkbox"]:checked + .label-checkbox > .span-check {
   align-items: center;
   justify-content: center;
   gap: 16px;
-}
-
-.input-footer {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  border: 1px solid #fff;
-  border-radius: 4px;
-  width: 288px;
-  height: 40px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  opacity: 0.3;
-  padding-left: 16px;
-  background-color: transparent;
 }
 
 .input-footer::placeholder {
