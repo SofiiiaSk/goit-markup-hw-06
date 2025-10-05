@@ -150,7 +150,7 @@ a {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/firstsec.jpg);
+    url(../images/office1x.jpg.png);
   max-width: 1440px;
   background-repeat: no-repeat;
   background-position: center;
@@ -731,6 +731,7 @@ input[type="checkbox"]:checked + .label-checkbox > .span-check {
 
 @media screen and (min-width: 320px) {
   .second-list {
+    min-width: 0;
     max-width: 428px;
     padding-left: 16px;
     padding-right: 16px;
@@ -1117,5 +1118,50 @@ input[type="checkbox"]:checked + .label-checkbox > .span-check {
 
   .input-footer {
     opacity: 1;
+  }
+}
+
+@media screen and (min-resolution: 2x) {
+  .first-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/office2x.jpg.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .first-section {
+    width: 768px;
+    padding-top: 112px;
+    padding-bottom: 112px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/office1x.jpg.png);
+  }
+}
+
+@media (min-width: 768px) and (min-resolution: 192dpi) {
+  .first-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(.);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .first-section {
+    width: 1440px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/office1x.jpg.png);
   }
 }
