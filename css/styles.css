@@ -59,6 +59,7 @@ button {
   width: 320px;
   padding-left: 0 16px;
   padding-right: 0 16px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -174,7 +175,7 @@ button {
   .contacts-list {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 16px;
   }
   .contacts-link {
     display: block;
@@ -199,6 +200,10 @@ button {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    font-family: Roboto;
+    font-weight: 400;
+    font-style: Regular;
+    line-height: 24px;
   }
 }
 
@@ -256,7 +261,7 @@ button {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
-.mobile-nav-list :focus#404BBF {
+.mobile-nav-list :focus {
   color: #404bbf;
 }
 .mobile-adress {
@@ -427,7 +432,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office1X.jpg);
+      url(../images/office2x.jpg.jpg);
   }
 
   .page-title {
@@ -436,10 +441,10 @@ button {
     margin-bottom: 36px;
     max-width: 496px;
   }
-}
-
-@media (min-width: 768px) and () {
   .first-section {
+    width: 768px;
+    padding-top: 112px;
+    padding-bottom: 112px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -448,10 +453,24 @@ button {
   }
 }
 
+@media (min-width: 768px) and (min-resolution: 192dpi) {
+  .first-section {
+    width: 768px;
+    padding-top: 112px;
+    padding-bottom: 112px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office1X.jpg);
+  }
+}
+
 @media screen and (min-width: 1158px) {
   .first-section {
     padding: 188px 0;
     margin: 0 auto;
+    background-image: url(../images/people-office1X.jpg);
     background-color: #2e2f42;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -471,7 +490,7 @@ button {
     justify-content: center;
     background-size: cover;
     background-color: #2a2a2a;
-    background-image: url(/images/firstsec.jpg);
+    background-image: url(../images/people-office1X.jpg);
     color: #fff;
     text-align: center;
     background-repeat: no-repeat;
@@ -800,6 +819,9 @@ button {
   width: 40px;
   height: 40px;
 }
+.footeg-ig {
+  fill: #fff;
+}
 .sub {
   margin-bottom: 16px;
   font-weight: 500;
@@ -1124,8 +1146,6 @@ input[type="checkbox"]:checked + .label-checkbox > .span-check {
     min-width: 0px;
   }
   .page-title-third {
-    margin-top: 96px;
-    margin-bottom: 72px;
     text-align: center;
     font-weight: 700;
     font-style: Bold;
@@ -1458,7 +1478,7 @@ input[type="checkbox"]:checked + .label-checkbox > .span-check {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(.);
+      url(../images/office2x.jpg.jpg);
   }
 }
 
