@@ -125,7 +125,7 @@ button {
     align-items: center;
     gap: 40px;
   }
-  contacts {
+  .contacts {
     font-style: normal;
     display: block;
   }
@@ -167,7 +167,8 @@ button {
   }
   .nav-link:hover,
   .nav-link:focus,
-  .nav-link.current {
+  .contacts-link:hover,
+  .contacts-link:focus .nav-link.current {
     color: #404bbf;
   }
   .contacts-list {
