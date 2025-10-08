@@ -57,8 +57,8 @@ button {
 /* common */
 .container {
   width: 320px;
-  padding-left: 0 16px;
-  padding-right: 0 16px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
 }
 
@@ -70,7 +70,7 @@ button {
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
-    padding: 0 15px;
+    padding: 15px;
   }
 }
 
@@ -109,6 +109,7 @@ button {
   color: #2e2f42;
 }
 .burger-btn {
+  display: block;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -152,18 +153,16 @@ button {
   }
   .nav-link.current {
     position: relative;
+    color: #404bbf;
   }
   .nav-link.current::after {
     content: "";
-
     position: absolute;
     left: 0;
     bottom: -1px;
-
     width: 100%;
     height: 4px;
     border-radius: 2px;
-
     background-color: #404bbf;
   }
   .nav-link:hover,
@@ -175,7 +174,11 @@ button {
   .contacts-list {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 12px;
+    color: #434455;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 12px;
   }
   .contacts-link {
     display: block;
@@ -240,7 +243,29 @@ button {
   position: absolute;
   top: 24px;
   right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.mobile-menu-close:hover,
+.mobile-menu-close:focus {
+  background-color: #404bbf;
+  border: none;
+  fill: #ffffff;
+}
+.close-button {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .burger-btn {
   width: 8px;
   height: 8px;
@@ -252,25 +277,70 @@ button {
 .mobile-nav-list {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 48px;
+  width: 151;
+  height: 200;
+  opacity: 1;
+  top: 72px;
+  left: 16px;
 }
+
+.mobile-studio-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 2%;
+  color: #404bbf;
+}
+.mobile-nav-link {
+  font-family: Roboto;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 2%;
+  color: #2e2f42;
+}
+.mobile-nav-link:hover,
+.mobile-nav-link:focus {
+  color: #404bbf;
+}
+
 .mobile-nav-item {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-}
-.mobile-nav-list :focus {
-  color: #404bbf;
+  line-height: 40px;
+  letter-spacing: 2%;
 }
 .mobile-adress {
   margin-bottom: 48px;
 }
-.contacts-list-mobile {
+.contacts-link-telefon {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 2%;
+  color: #4d5ae5;
+  gap: 24px;
+}
+.contacts-link-mobile {
   display: flex;
   flex-direction: column;
   font-style: normal;
+  font-family: Roboto;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 2%;
+  color: #434455;
+  gap: 24px;
+}
+.contacts-list-mobile {
   gap: 24px;
 }
 .contacts-item-mobile {
@@ -280,11 +350,10 @@ button {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
-.contacts-list-mobile:focus,
-.contacts-list-mobile:hover {
-  color: #4d5ae5;
+.mobile-adress {
+  margin-bottom: 48px;
 }
-.network {
+.networks {
   display: flex;
   gap: 40px;
 }
@@ -295,11 +364,9 @@ button {
 .networkis-link {
   width: 100%;
   height: 100%;
-  background-color: #4d5ae5;
+  background-color: #2e2f42;
   border-radius: 50%;
   display: flex;
-  align-items: center;
-  justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -331,7 +398,6 @@ button {
   color: #404bbf;
 }
 /*HEADER CONTAINER */
-
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -357,6 +423,9 @@ button {
     display: flex;
     flex-direction: row;
     gap: 40px;
+  }
+  .contacts-link {
+    font-size: 16px;
   }
 }
 
@@ -629,7 +698,7 @@ button {
 }
 
 .container-team {
-  padding: 0 15px;
+  padding: 15px;
 }
 .team-container {
   padding: 32px 0;
@@ -1063,8 +1132,6 @@ input[type="checkbox"]:checked + .label-checkbox > .span-check {
 @media screen and (min-width: 320px) {
   .second-list {
     min-width: 0;
-    max-width: 428px;
-    padding-left: 16px;
     padding-right: 16px;
     margin: 0 auto;
     display: flex;
@@ -1158,14 +1225,9 @@ input[type="checkbox"]:checked + .label-checkbox > .span-check {
     flex-direction: column;
     align-items: center;
     gap: 72px;
-    padding-bottom: 96px;
   }
   .team-page {
     width: 264px;
-    margin-top: 32px;
-    margin-bottom: 32px;
-    width: 232;
-    height: 104;
     gap: 8px;
   }
 }
@@ -1193,16 +1255,15 @@ input[type="checkbox"]:checked + .label-checkbox > .span-check {
   .third-section {
     padding: 120px 0;
     background-color: #f4f4fd;
-
-    .third-list {
-      max-width: 1440px;
-      display: flex;
-      gap: 24px;
-    }
   }
-  .container-team {
-    padding: 0 15px;
+  .third-list {
+    max-width: 1440px;
+    display: flex;
+    gap: 24px;
   }
+}
+.container-team {
+  padding: 0 15px;
 }
 
 /* FOURTH SECTION */
@@ -1213,9 +1274,7 @@ input[type="checkbox"]:checked + .label-checkbox > .span-check {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 24px;
-    padding-left: 16px;
-    padding-right: 16px;
+    gap: 48px;
     margin: 0 auto;
   }
 
@@ -1250,8 +1309,8 @@ input[type="checkbox"]:checked + .label-checkbox > .span-check {
 /*COMPUTER */
 
 /*FOOTER */
-
-.page-footer {
+.container .page-footer {
+  max-width: 528px;
   display: flex;
   flex-direction: column;
   padding-top: 96px;
@@ -1287,7 +1346,6 @@ input[type="checkbox"]:checked + .label-checkbox > .span-check {
 }
 
 .paragraf-footer {
-  text-align: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
