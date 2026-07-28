@@ -1,0 +1,68 @@
+/* Responsive layout overrides for mobile, tablet and desktop. */
+
+* { box-sizing: border-box; }
+
+.burger-button {
+  margin-left: auto;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background: transparent;
+  color: #2e2f42;
+  cursor: pointer;
+}
+
+.burger-button svg { fill: none; }
+
+@media screen and (max-width: 767px) {
+  .container { width: 100%; max-width: 428px; padding-left: 16px; padding-right: 16px; }
+  .header-logo { margin-right: 0; padding: 16px 0; }
+  .header-nav, .contacts { display: none; }
+  .first-section { padding: 72px 0; }
+  .page-title { max-width: 320px; margin-bottom: 72px; font-size: 36px; line-height: 1.11; }
+  .second-section, .third-section, .fourth-section { padding-top: 96px; padding-bottom: 96px; }
+  .second-list { gap: 72px; padding: 0; }
+  .points-text { width: 100%; }
+  .icon-container { display: none; }
+  .points-title { font-size: 36px; line-height: 1.11; text-align: center; }
+  .paragraf { font-weight: 500; }
+  .page-title-third { margin-bottom: 72px; }
+  .third-list { gap: 72px; }
+  .fourth-list { align-items: stretch; }
+  .apps-list { max-width: 396px; }
+  .all-content { flex-direction: column; align-items: center; text-align: center; gap: 72px; }
+  .logop-container, .social-container, .form-container { margin: 0; }
+  .footer-form { flex-direction: column; gap: 16px; }
+  .input-footer { width: 100%; }
+  .button-footer { margin: 0 auto; }
+  .modal { width: calc(100% - 32px); min-height: 584px; padding: 72px 16px 24px; }
+  .mobile-menu { z-index: 1001; }
+  .contacts-list-mobile { display: flex; flex-direction: column; gap: 24px; }
+}
+
+@media screen and (min-width: 768px) {
+  .burger-button { display: none; }
+  .container { width: 768px; max-width: 100%; padding: 0 16px; }
+  .first-section {
+    width: 100%;
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url("../images/firstsec.jpg");
+  }
+  .fourth-section { width: 100%; }
+  .third-list { justify-content: center; row-gap: 64px; }
+  .team-page { width: 264px; }
+  .all-content { justify-content: flex-start; row-gap: 72px; }
+  .form-container { margin-left: 0; }
+}
+
+@media screen and (min-width: 1158px) {
+  .container { width: 1158px; padding: 0 15px; }
+  .points-title { font-size: 20px; line-height: 1.2; text-align: left; }
+  .all-content { align-items: baseline; }
+  .form-container { margin-left: auto; }
+}
