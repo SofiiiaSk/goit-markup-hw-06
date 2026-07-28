@@ -1,51 +1,25 @@
-/*
-  font-family: "Roboto", sans-serif;
-  font-family: "Raleway", sans-serif;
-*/
-
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
-/* reset */
+*,
+*::before,
+*::after { box-sizing: border-box; }
 
-ul,
-ol {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-}
-
-/* common layout */
+ul, ol { margin: 0; padding: 0; list-style: none; }
+h1, h2, h3, h4, h5, h6, p { margin: 0; }
+a { text-decoration: none; }
+img { display: block; max-width: 100%; }
 
 .container {
-  max-width: 1158px;
-  padding: 0 15px;
+  width: 100%;
+  max-width: 320px;
   margin: 0 auto;
+  padding: 0 16px;
 }
 
-/* visually hide headings/labels that are only needed for screen readers */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -59,18 +33,26 @@ img {
   border: 0;
 }
 
-/* shared headings used by both Team and Portfolio sections */
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+
 .page-title-third {
   margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.11;
-  text-align: center;
   letter-spacing: 0.02em;
+  text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
 }
 
-/* shared card heading used by Features and Team member names */
 .points-title {
   margin-bottom: 8px;
   font-weight: 500;
@@ -80,18 +62,12 @@ img {
   color: #2e2f42;
 }
 
-/* default icon fill (used on the dark-background footer social icons) */
-.svgimages {
-  fill: #f4f4fd;
-}
+.svgimages { fill: #f4f4fd; }
+
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
+  .container { max-width: 768px; padding: 0 16px; }
 }
+
 @media screen and (min-width: 1158px) {
-  .container {
-    max-width: 1158px;
-    padding: 15px;
-  }
+  .container { max-width: 1158px; padding: 0 15px; }
 }
