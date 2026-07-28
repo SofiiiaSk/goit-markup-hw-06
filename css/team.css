@@ -96,3 +96,65 @@
 .networkis-link .svgimages {
   fill: #f4f4fd;
 }
+@media screen and (min-width: 320px) {
+  .third-section {
+    min-width: 0px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .page-title-third {
+    text-align: center;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .third-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
+  }
+  .team-page {
+    width: 264px;
+    gap: 8px;
+  }
+}
+
+/* PLANSHET */
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .third-list {
+    max-width: 768px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+  }
+}
+
+/*COMPUTER */
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+  }
+  .third-section {
+    background-color: #f4f4fd;
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .third-list {
+    max-width: 1440px;
+    display: flex;
+    gap: 24px;
+  }
+}
+.container-team {
+  padding: 0 15px;
+}

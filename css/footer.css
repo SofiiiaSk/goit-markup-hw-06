@@ -183,3 +183,97 @@
   visibility: visible;
   pointer-events: auto;
 }
+@media screen and (min-width: 768px) {
+  .all-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+  }
+
+  .logop-container {
+    align-items: flex-start;
+    text-align: left;
+    max-width: 264px;
+    margin: 0;
+  }
+
+  .social-container {
+    align-items: flex-start;
+    margin: 0;
+  }
+
+  .form-container {
+    align-items: flex-start;
+  }
+
+  .forma {
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 24px;
+  }
+
+  .input-footer {
+    max-width: 264px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .page-footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .all-content {
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+
+  .logop-container {
+    margin-right: 120px;
+  }
+
+  .social-container {
+    margin-right: 80px;
+  }
+
+  .input-footer {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-resolution: 2x) {
+  .first-section {
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/office2x.jpg.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .first-section {
+    width: 768px;
+    padding-top: 112px;
+    padding-bottom: 112px;
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/office1x.jpg.png);
+  }
+}
+
+@media (min-width: 768px) and (min-resolution: 192dpi) {
+  .first-section {
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/office2x.jpg.jpg);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .first-section {
+    width: 1440px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/office1x.jpg.png);
+  }
+}
