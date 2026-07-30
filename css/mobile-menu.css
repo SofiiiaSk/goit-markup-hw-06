@@ -5,7 +5,7 @@
 .mobile-menu-nav { margin-bottom: auto; }
 .mobile-nav-list { display: flex; flex-direction: column; gap: 40px; }
 .mobile-nav-item, .mobile-studio-link, .mobile-nav-link { font-weight: 700; font-size: 36px; line-height: 1.11; letter-spacing: .02em; }
-.mobile-studio-link { color: #404bbf; }.mobile-nav-link { color: #2e2f42; }
+.mobile-studio-link { color: #2e2f42; }.mobile-nav-link { color: #2e2f42; }
 .mobile-adress { margin-bottom: 48px; font-style: normal; }
 .contacts-list-mobile { display: flex; flex-direction: column; gap: 24px; }
 .contacts-link-telefon, .contacts-link-mobile { display: block; font-style: normal; font-weight: 500; font-size: 20px; line-height: 1.2; letter-spacing: .02em; }

@@ -7,11 +7,32 @@
 .page-title { max-width: 216px; margin: 0 auto 72px; font-size: 36px; line-height: 1.11; letter-spacing: .02em; text-align: center; color: #fff; }
 .one-button { display: block; min-width: 169px; height: 56px; margin: 0 auto; padding: 16px 32px; border: 0; border-radius: 4px; background: #4d5ae5; box-shadow: 0 4px 4px rgba(0,0,0,.15); color: #fff; font: 500 16px/1.5 "Roboto", sans-serif; letter-spacing: .04em; cursor: pointer; }
 .one-button:hover, .one-button:focus { background: #404bbf; }
-@media screen and (min-width: 768px) { .first-section { padding: 112px 0; } .page-title { max-width: 496px; margin-bottom: 36px; } }
-@media screen and (min-width: 1158px) { .first-section { padding: 188px 0; } .page-title { font-size: 56px; line-height: 1.07; margin-bottom: 48px; } }
-
-@media (min-resolution: 192dpi) {
+@media screen and (min-width: 768px) {
   .first-section {
-    background-image: linear-gradient(rgba(46, 47, 66, .7), rgba(46, 47, 66, .7)), url("../images/firstsec.jpg");
+    padding: 112px 0;
+  }
+
+  .page-title {
+    max-width: 496px;
+    margin-bottom: 36px;
+    font-size: 56px;
+    line-height: 1.07;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .first-section {
+    padding: 188px 0;
+  }
+
+  .page-title {
+    margin-bottom: 48px;
+  }
+}
+@media screen and (min-resolution: 2dppx) {
+  .first-section {
+    background-image:
+      linear-gradient(rgba(46, 47, 66, .7), rgba(46, 47, 66, .7)),
+      url("../images/firstsec1man.jpg");
   }
 }
